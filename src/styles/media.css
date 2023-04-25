@@ -1,0 +1,204 @@
+@media (min-width: 425px) {
+    .post__button-container {
+        width: 45%;
+        
+    }
+
+    .modal__container {
+        width: 100%;
+        height: 100%;
+
+        margin-top: 1.25rem;
+
+        padding: 3.125rem;
+        overflow-y: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .post__button-container {
+        width: 26%;
+    }
+
+    dialog {
+        width: 80%;
+        height: 70%;
+    }
+    .modal__container {
+        width: 100%;
+        height: 100%;
+
+        margin-top: 0;
+        overflow-y: auto;
+    }
+
+    dialog::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #close__modal {
+        top: .9375rem;
+        right: .9375rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    nav {
+        justify-content: space-between;
+
+        padding-left: 12%;
+        padding-right: 12%; 
+    }
+    
+    .post__container {
+        width: 100%;
+        height: 18.75rem;
+
+        padding-left: 19%;
+        padding-bottom: 3.75rem;
+
+        position: relative;
+    }
+
+      
+    .post__input-title {
+        margin: .625rem 0;
+        width: 100%;
+        height: .3125rem;
+    }
+    
+    .post__description {
+        width: 100%;
+        height: 7.8125rem;
+    }
+    
+    .post__input-title {
+        height: 3.25rem;
+    }
+    
+    #submit {
+        position: absolute;
+        bottom: .125rem;
+        right: 1.3125rem;
+    }
+    
+    .main__container {
+        width: 60%;
+        height: 100vh;
+
+        padding-top: 1.875rem;
+    }
+    
+    .toFollow {
+        width: 140%;
+
+        top: 6%;
+    }
+
+    .toFollow__container {
+        width: 90%;
+
+        padding-left: 1.25rem;
+
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    .published-posts__container {
+        position: relative;
+        top:0;
+
+        padding-left: 19%;
+        padding-bottom: 7.5rem;
+
+        animation: fadeIn 0.8s linear;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            tranform: scale(0.6);
+            opacity: 0;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    .post__button-container {
+        width: 36%;
+    }
+
+    aside {
+        width: 40%;
+
+        height: 100vh;
+
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        right: 0;
+        top: 76px;
+        gap: 50px;
+
+
+        padding: 3.125rem 1.25rem 2.5rem .625rem;
+
+        background-color: var(--white-fixed);
+    }
+
+    .post__user {
+        width: 90%;
+        justify-content: flex-start;
+        gap: .625rem;
+    }
+
+
+    .follow-button {
+        position: relative;
+        top: .625rem;
+        right: 0;
+    }
+    
+    
+    dialog {
+        width: 50%;
+        height: 70%;
+    }
+    .modal__container {
+        width: 100%;
+        height: 100%;
+
+        margin-top: 0;
+        overflow-y: auto;
+    }
+
+    dialog::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media (min-width: 1440px) {
+    .post__button-container {
+        width: 23%;
+    }
+
+    .post__user {
+        width: 80%;
+        justify-content: flex-start;
+        gap: 1.25rem;
+    }
+
+    aside {
+        padding: 3.125rem 1.25rem 2.5rem 6.25rem;
+
+        animation: fadeIn 0.8s linear;
+    }
+
+    .toFollow {
+
+        top: 5%;
+    }
+}

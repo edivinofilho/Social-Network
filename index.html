@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--JS-->
+    <script type="module" src="./src/scripts/index.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/global.css" />
+    <link rel="stylesheet" href="./src/styles/modal.css"/>
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/media.css"/>
+
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Criando rede social</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#" class="nav__logo"><h1>TechPosters</h1></a>
+      <p><a href="#">Sair</a></p>
+    </nav>
+    
+    <div class="main__container">
+      
+      <section class="post__container">
+          
+        <div class="post__user">
+          <img src="./src/assets/img/user1.svg">
+          
+          <div class="post__user-details">
+            <h2>Samuel Leão</h2>
+            <p>Front end Engineer</p>  
+          </div>
+        </div>
+        
+        <input type="text" placeholder="Digitar título do post" class="post__input-title">
+        
+        <input type="text" placeholder="Digitar descrição do post" class="post__description">
+  
+        <button type="submit" id="submit">Postar</button>
+      </section>
+
+      <aside>
+        <h2 class="toFollow">Sugestões para você seguir</h2>
+
+        <div class="toFollow__container">
+
+          <ul class="post__user"> 
+            <figure>
+              <img src="./src/assets/img/user1.svg">
+            </figure>
+            <li class="post__user-details">
+              <h2>Samuel Leão</h2>
+              <p>Front end Engineer</p>  
+              <button class="follow-button">Seguir</button>
+            </li>    
+          </ul>
+        </div>
+      </aside>
+      <main>
+        <div class="published-posts__container">
+          <h2>Posts</h2>
+          
+          <section class="published-post">
+            
+            <ul class="post__user"> 
+              <figure>
+                <img src="./src/assets/img/user1.svg">
+              </figure>
+              <li class="post__user-details">
+                <h2>Samuel Leão</h2>
+                <p>Front end Engineer</p>  
+              </li>    
+            </ul>
+
+            <article class="post">
+              <h2>Empresa de Tecnologia da Informação abre vagas paraprograma de estágio</h2>
+
+              <p class="post__content">
+                A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de agosto.
+              </p> 
+
+              <div class="post__button-container">
+                <button class="post__button">Abrir Post</button>
+  
+                <img src="./src/assets/img/Vectorheart-gray.svg" alt="" class="heart"> 
+
+                <span class="post__count-likes">0</span>
+              </div>
+            </article>
+          </section>
+        </div>
+      </main>
+    </div>
+    
+    <dialog id="modal__controller">
+      
+    </dialog>
+  </body>
+</html>
